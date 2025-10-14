@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub, FaPaperPlane } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 
 const Contact = () => {
   const contactRef = useRef(null);
@@ -114,16 +115,22 @@ const Contact = () => {
               <h4 className="text-xl font-semibold mb-4">Follow Me</h4>
               <div className="flex gap-4">
                 <a 
-                  href="https://linkedin.com" 
+                  href="https://www.linkedin.com/in/fuleswari-saha-3b95b723a/" 
                   className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-primary transition-all duration-300 hover:scale-110 backdrop-blur-sm"
                 >
                   <FaLinkedin size={20} />
                 </a>
                 <a 
-                  href="https://github.com" 
+                  href="https://github.com/fuleswari220" 
                   className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-primary transition-all duration-300 hover:scale-110 backdrop-blur-sm"
                 >
                   <FaGithub size={20} />
+                </a>
+                 <a 
+                  href="https://x.com/fuleswari_saha" 
+                  className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-primary transition-all duration-300 hover:scale-110 backdrop-blur-sm"
+                >
+                  <FaXTwitter size={20} />
                 </a>
               </div>
             </div>

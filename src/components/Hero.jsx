@@ -50,26 +50,26 @@ const Hero = () => {
   const socialLinks = [
     {
       icon: <FaGithub size={20} />,
-      url: "https://github.com/yourusername",
+      url: "https://github.com/fuleswari220",
       label: "GitHub",
       color: "hover:bg-gray-700"
     },
     {
       icon: <FaLinkedin size={20} />,
-      url: "https://linkedin.com/in/yourusername",
+      url: "https://www.linkedin.com/in/fuleswari-saha-3b95b723a/",
       label: "LinkedIn",
       color: "hover:bg-blue-600"
     },
     {
       icon: <FaXTwitter size={20} />,
-      url: "https://twitter.com/yourusername",
+      url: "https://x.com/fuleswari_saha",
       label: "X (Twitter)",
       color: "hover:bg-black"
     }
   ];
 
-  // Google Drive CV Link - Replace with your actual file ID
-  const cvDriveLink = "https://drive.google.com/drive/folders/1y75zz-YCoCWqMs-0-Oo0RrZ5F2EQNlOI?usp=sharing";
+  // Google Drive CV Link - Updated to direct download link
+  const cvDriveLink = "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_HERE";
 
   return (
     <section 
@@ -105,7 +105,6 @@ const Hero = () => {
               className="btn-outline border-white text-white hover:bg-white hover:text-dark transition-all duration-300 flex items-center gap-2 px-8 py-4 rounded-full font-medium"
               target="_blank"
               rel="noopener noreferrer"
-              download="Fuleswari_Saha_CV.pdf"
             >
               <FaDownload /> Download CV
             </a>
@@ -135,8 +134,8 @@ const Hero = () => {
         <div className="floating-shape absolute w-32 h-32 bg-gradient-to-r from-primary to-secondary rounded-full opacity-10 top-1/2 left-1/3"></div>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center text-gray-400">
+      {/* Scroll Indicator - Hidden on Mobile */}
+      <div className="hidden md:flex absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center text-gray-400">
         <div className="flex flex-col items-center">
           <div className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center mb-2">
             <div className="w-1 h-3 bg-gray-400 rounded-full mt-2 animate-scroll"></div>

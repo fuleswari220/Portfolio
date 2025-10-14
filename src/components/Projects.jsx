@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { FaExternalLinkAlt, FaGithub, FaCode, FaDatabase, FaMobile, FaShoppingCart, FaCalendarAlt, FaMusic, FaNewspaper, FaFilm, FaGamepad, FaChartLine, FaArrowDown, FaArrowUp } from 'react-icons/fa';
+import { FaExternalLinkAlt, FaGithub, FaCode, FaDatabase, FaCoffee, FaMobile, FaShoppingCart, FaCalendarAlt, FaMusic, FaNewspaper, FaFilm, FaGamepad, FaChartLine, FaArrowDown, FaArrowUp } from 'react-icons/fa';
 import { GiDiceSixFacesSix } from 'react-icons/gi';
+
 
 const Projects = () => {
     const projectsRef = useRef(null);
@@ -97,12 +98,26 @@ const Projects = () => {
             icon: <FaCode />,
             technologies: ["React", "GSAP", "Tailwind CSS", "EmailJS"],
             liveLink: "#",
-            githubLink: "#",
+            githubLink: "https://github.com/fuleswari220/Portfolio",
             features: [
                 "Smooth animations",
                 "Dark/light mode",
                 "Contact form",
                 "Responsive design"
+            ]
+        },
+        {
+            title: "JF Cafe Website",
+            description: "Full-stack cafe website built with the MERN stack, featuring menu display, online ordering, and contact functionality with smooth UI and animations.",
+            icon: <FaCoffee />,
+            technologies: ["MongoDB", "Express.js", "React", "Node.js"],
+            liveLink: "#",
+            githubLink: "https://github.com/fuleswari220/JF-Cafe",
+            features: [
+                "Menu display with categories",
+                "Online order form integration",
+                "Smooth animations and transitions",
+                "Responsive and mobile-friendly design"
             ]
         }
     ];
