@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { FaReact, FaNodeJs, FaDatabase,  FaCode,  FaGitAlt } from 'react-icons/fa';
+import { FaReact, FaNodeJs, FaDatabase, FaCode, FaGitAlt } from 'react-icons/fa';
 import { SiJavascript, SiMongodb, SiExpress, SiTailwindcss } from 'react-icons/si';
 
 const Skills = () => {
@@ -27,11 +27,7 @@ const Skills = () => {
 
     // Stagger animation for tech icons
     gsap.fromTo('.tech-icon', 
-      { 
-        scale: 0, 
-        opacity: 0,
-        rotation: -180
-      },
+      { scale: 0, opacity: 0, rotation: -180 },
       {
         scale: 1,
         opacity: 1,
@@ -79,7 +75,7 @@ const Skills = () => {
 
   return (
     <section id="skills" ref={skillsRef} className="py-20 bg-white">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="section-title">Skills & Technologies</h2>
           <p className="section-subtitle">
@@ -87,18 +83,16 @@ const Skills = () => {
           </p>
         </div>
 
-        <div className="skills-content grid lg:grid-cols-2 gap-12 mb-16">
+        <div className="skills-content grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
           {/* Technical Skills Progress */}
           <div>
             <h3 className="text-2xl font-bold text-dark mb-8">Technical Proficiency</h3>
             <div className="space-y-6">
               {technicalSkills.map((skill, index) => (
                 <div key={index} className="skill-item">
-                  <div className="flex justify-between items-center mb-3">
+                  <div className="flex justify-between items-center mb-3 flex-wrap">
                     <div className="flex items-center gap-3">
-                      <div className="text-primary text-xl">
-                        {skill.icon}
-                      </div>
+                      <div className="text-primary text-xl">{skill.icon}</div>
                       <span className="font-semibold text-gray-800">{skill.name}</span>
                     </div>
                     <span className="text-primary font-bold">{skill.level}%</span>
@@ -117,11 +111,11 @@ const Skills = () => {
           {/* Tech Stack Icons */}
           <div className="tech-stack">
             <h3 className="text-2xl font-bold text-dark mb-8">Tech Stack</h3>
-            <div className="grid grid-cols-4 gap-6">
+            <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 gap-4 sm:gap-6 overflow-x-auto scrollbar-hide">
               {technicalSkills.map((skill, index) => (
                 <div 
                   key={index}
-                  className="tech-icon flex flex-col items-center p-4 bg-light rounded-2xl hover:shadow-lg transition-all duration-300 group"
+                  className="tech-icon flex flex-col items-center p-4 bg-light rounded-2xl hover:shadow-lg transition-all duration-300 group min-w-[90px]"
                 >
                   <div className="text-4xl text-primary mb-2 group-hover:scale-110 transition-transform duration-300">
                     {skill.icon}
@@ -136,7 +130,7 @@ const Skills = () => {
         </div>
 
         {/* Skill Categories */}
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {skillCategories.map((category, index) => (
             <div 
               key={index}

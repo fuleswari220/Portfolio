@@ -3,6 +3,15 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { FaExternalLinkAlt, FaGithub, FaCode, FaDatabase, FaCoffee, FaMobile, FaShoppingCart, FaCalendarAlt, FaMusic, FaNewspaper, FaFilm, FaGamepad, FaChartLine, FaArrowDown, FaArrowUp } from 'react-icons/fa';
 import { GiDiceSixFacesSix } from 'react-icons/gi';
+import newsImg from "../assests/fulnews.png";
+import spotifyImg from "../assests/SpotifyClone.png";
+import netflixImg from "../assests/NetflixClone.png";
+import diceImg from "../assests/Dice Game.png";
+import portfolioImg from "../assests/Portfolio.png";
+import cafeImg from "../assests/JKcafe.png";
+
+
+
 
 
 const Projects = () => {
@@ -37,51 +46,23 @@ const Projects = () => {
 
     const projects = [
         {
-            title: "Fulcare - Health News App",
-            description: "Fetches latest health news from trusted API sources with country-based filtering and responsive design.",
-            icon: <FaNewspaper />,
-            technologies: ["HTML", "CSS", "Bootstrap", "JavaScript", "NewsAPI"],
+            title: "JF Cafe Website",
+            description: "Full-stack cafe website built with the MERN stack, featuring menu display, online ordering, and contact functionality with smooth UI and animations.",
+            image: cafeImg,
+            technologies: ["MongoDB", "Express.js", "React", "Node.js"],
             liveLink: "#",
-            githubLink: "https://github.com/fuleswari220/NewsApp",
+            githubLink: "https://github.com/fuleswari220/JF-Cafe",
             features: [
-                "Real-time health news updates",
-                "Country-based news filtering",
-                "Responsive design",
-                "API integration"
-            ]
-        },
-        {
-            title: "Spotify Clone",
-            description: "Responsive music streaming web application with playback controls and modern UI design.",
-            icon: <FaMusic />,
-            technologies: ["HTML5", "CSS3", "JavaScript"],
-            liveLink: "#",
-            githubLink: "https://github.com/fuleswari220/Spotify-Clone",
-            features: [
-                "Music playback controls",
-                "Responsive design",
-                "Modern UI/UX",
-                "Interactive elements"
-            ]
-        },
-        {
-            title: "Netflix Clone",
-            description: "Fully responsive frontend clone of Netflix with modern design and smooth animations.",
-            icon: <FaFilm />,
-            technologies: ["HTML5", "CSS3", "JavaScript"],
-            liveLink: "#",
-            githubLink: "https://github.com/fuleswari220/Netflix-Clone",
-            features: [
-                "Fully responsive design",
-                "Netflix-like UI",
-                "Smooth animations",
-                "Modern layout"
+                "Menu display with categories",
+                "Online order form integration",
+                "Smooth animations and transitions",
+                "Responsive and mobile-friendly design"
             ]
         },
         {
             title: "Dice Game",
             description: "An interactive dice game built with React where players roll dice to test their luck and score points.",
-            icon: <GiDiceSixFacesSix />,
+            image: diceImg,
             technologies: ["React", "JavaScript", "CSS"],
             liveLink: "#",
             githubLink: "https://github.com/fuleswari220/Dice-Game",
@@ -95,7 +76,7 @@ const Projects = () => {
         {
             title: "Portfolio Website",
             description: "Modern portfolio website with animations, dark mode, and contact form.",
-            icon: <FaCode />,
+            image: portfolioImg,
             technologies: ["React", "GSAP", "Tailwind CSS", "EmailJS"],
             liveLink: "#",
             githubLink: "https://github.com/fuleswari220/Portfolio",
@@ -107,19 +88,47 @@ const Projects = () => {
             ]
         },
         {
-            title: "JF Cafe Website",
-            description: "Full-stack cafe website built with the MERN stack, featuring menu display, online ordering, and contact functionality with smooth UI and animations.",
-            icon: <FaCoffee />,
-            technologies: ["MongoDB", "Express.js", "React", "Node.js"],
+            title: "Fulcare - Health News App",
+            description: "Fetches latest health news from trusted API sources with country-based filtering and responsive design.",
+            image: newsImg,
+            technologies: ["HTML", "CSS", "Bootstrap", "JavaScript", "NewsAPI"],
             liveLink: "#",
-            githubLink: "https://github.com/fuleswari220/JF-Cafe",
+            githubLink: "https://github.com/fuleswari220/NewsApp",
             features: [
-                "Menu display with categories",
-                "Online order form integration",
-                "Smooth animations and transitions",
-                "Responsive and mobile-friendly design"
+                "Real-time health news updates",
+                "Country-based news filtering",
+                "Responsive design",
+                "API integration"
             ]
-        }
+        },
+        {
+            title: "Spotify Clone",
+            description: "Responsive music streaming web application with playback controls and modern UI design.",
+            image: spotifyImg,
+            technologies: ["HTML5", "CSS3", "JavaScript"],
+            liveLink: "#",
+            githubLink: "https://github.com/fuleswari220/Spotify-Clone",
+            features: [
+                "Music playback controls",
+                "Responsive design",
+                "Modern UI/UX",
+                "Interactive elements"
+            ]
+        },
+        {
+            title: "Netflix Clone",
+            description: "Fully responsive frontend clone of Netflix with modern design and smooth animations.",
+            image: netflixImg,
+            technologies: ["HTML5", "CSS3", "JavaScript"],
+            liveLink: "#",
+            githubLink: "https://github.com/fuleswari220/Netflix-Clone",
+            features: [
+                "Fully responsive design",
+                "Netflix-like UI",
+                "Smooth animations",
+                "Modern layout"
+            ]
+        },
     ];
 
     // Show only first 3 projects initially, or all when showAll is true
@@ -148,11 +157,16 @@ const Projects = () => {
                             {/* Project Header with Icon */}
                             <div className="h-48 bg-gradient-to-br from-primary to-secondary relative overflow-hidden">
                                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all duration-300"></div>
-                                <div className="absolute inset-0 flex items-center justify-center text-white">
-                                    <div className="text-6xl opacity-20 group-hover:scale-110 transition-transform duration-300">
-                                        {project.icon}
-                                    </div>
+                                <div className="h-48 relative overflow-hidden rounded-t-2xl shadow-inner">
+                                    <img
+                                        src={project.image}
+                                        alt={project.title}
+                                        className="w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-500"
+                                    />
+                                    <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all duration-300"></div>
                                 </div>
+
+
                             </div>
 
                             {/* Project Content */}
