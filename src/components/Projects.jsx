@@ -46,7 +46,7 @@ const Projects = () => {
 
     const projects = [
         {
-            title: "JF Cafe Website",
+            title: "JK Cafe Website",
             description: "Full-stack cafe website built with the MERN stack, featuring menu display, online ordering, and contact functionality with smooth UI and animations.",
             image: cafeImg,
             technologies: ["MongoDB", "Express.js", "React", "Node.js"],
@@ -64,7 +64,7 @@ const Projects = () => {
             description: "An interactive dice game built with React where players roll dice to test their luck and score points.",
             image: diceImg,
             technologies: ["React", "JavaScript", "CSS"],
-            liveLink: "#",
+            liveLink: "https://dice-game-d84804.netlify.app/",
             githubLink: "https://github.com/fuleswari220/Dice-Game",
             features: [
                 "Two-player dice rolling gameplay",
@@ -78,7 +78,7 @@ const Projects = () => {
             description: "Modern portfolio website with animations, dark mode, and contact form.",
             image: portfolioImg,
             technologies: ["React", "GSAP", "Tailwind CSS", "EmailJS"],
-            liveLink: "#",
+            liveLink: "https://portfolio-41f1a8.netlify.app/",
             githubLink: "https://github.com/fuleswari220/Portfolio",
             features: [
                 "Smooth animations",
@@ -88,8 +88,8 @@ const Projects = () => {
             ]
         },
         {
-            title: "Fulcare - Health News App",
-            description: "Fetches latest health news from trusted API sources with country-based filtering and responsive design.",
+            title: "FulNews - All Type News App",
+            description: "Fetches latest all news from trusted API sources with country-based filtering and responsive design.",
             image: newsImg,
             technologies: ["HTML", "CSS", "Bootstrap", "JavaScript", "NewsAPI"],
             liveLink: "#",
