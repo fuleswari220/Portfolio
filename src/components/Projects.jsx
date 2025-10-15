@@ -8,7 +8,7 @@ import spotifyImg from "../assests/SpotifyClone.png";
 import netflixImg from "../assests/NetflixClone.png";
 import diceImg from "../assests/Dice Game.png";
 import portfolioImg from "../assests/Portfolio.png";
-import cafeImg from "../assests/JKcafe.png";
+import cafeImg from "../assests/JKCafe.png";
 
 
 
