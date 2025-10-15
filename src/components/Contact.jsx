@@ -218,7 +218,7 @@ const Contact = () => {
         {/* Footer */}
         <div className="text-center mt-16 pt-8 border-t border-white/20">
           <p className="text-gray-300">
-            © 2024 Fuleswari Saha. Made with ❤️ using React & Tailwind CSS
+            © 2025 Fuleswari Saha.
           </p>
         </div>
       </div>

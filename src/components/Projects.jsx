@@ -106,7 +106,7 @@ const Projects = () => {
             description: "Responsive music streaming web application with playback controls and modern UI design.",
             image: spotifyImg,
             technologies: ["HTML5", "CSS3", "JavaScript"],
-            liveLink: "#",
+            liveLink: "https://spotify-d8fe99.netlify.app/",
             githubLink: "https://github.com/fuleswari220/Spotify-Clone",
             features: [
                 "Music playback controls",
@@ -120,7 +120,7 @@ const Projects = () => {
             description: "Fully responsive frontend clone of Netflix with modern design and smooth animations.",
             image: netflixImg,
             technologies: ["HTML5", "CSS3", "JavaScript"],
-            liveLink: "#",
+            liveLink: "https://lively-torte-93fd4d.netlify.app/",
             githubLink: "https://github.com/fuleswari220/Netflix-Clone",
             features: [
                 "Fully responsive design",
