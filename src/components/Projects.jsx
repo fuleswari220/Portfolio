@@ -12,9 +12,6 @@ import cafeImg from "../assests/JKCafe.png";
 import luxeScentsImg from "../assests/luxeScentsImg.png";
 
 
-
-
-
 const Projects = () => {
     const projectsRef = useRef(null);
     const [showAll, setShowAll] = useState(false);
@@ -63,18 +60,19 @@ const Projects = () => {
 
         {
             title: "JK Cafe Website",
-            description: "Full-stack cafe website built with the MERN stack, featuring menu display, online ordering, and contact functionality with smooth UI and animations.",
+            description: "Frontend cafe website featuring dynamic menu categories, smooth animations, and a modern responsive UI built with React.",
             image: cafeImg,
-            technologies: ["MongoDB", "Express.js", "React", "Node.js"],
-            liveLink: "#",
-            githubLink: "https://github.com/fuleswari220/JF-Cafe",
+            technologies: ["React", "Tailwind CSS", "GSAP"],
+            liveLink: "https://tastewithjk.vercel.app/",
+            githubLink: "https://github.com/fuleswari220/Cafe",
             features: [
-                "Menu display with categories",
-                "Online order form integration",
-                "Smooth animations and transitions",
-                "Responsive and mobile-friendly design"
+                "Interactive menu section with categories",
+                "GSAP-based smooth scroll animations",
+                "Modern and elegant cafe-themed design",
+                "Fully responsive and mobile-friendly layout"
             ]
         },
+
         {
             title: "Dice Game",
             description: "An interactive dice game built with React where players roll dice to test their luck and score points.",
