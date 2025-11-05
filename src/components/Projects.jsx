@@ -9,6 +9,7 @@ import netflixImg from "../assests/NetflixClone.png";
 import diceImg from "../assests/Dice Game.png";
 import portfolioImg from "../assests/Portfolio.png";
 import cafeImg from "../assests/JKCafe.png";
+import luxeScentsImg from "../assests/luxeScentsImg.png";
 
 
 
@@ -45,6 +46,21 @@ const Projects = () => {
     }, [showAll]); // Re-run animation when showAll changes
 
     const projects = [
+        {
+            title: "Luxe Scents",
+            description: "Elegant perfume landing page featuring luxury visuals, smooth scroll animations, and a modern responsive layout.",
+            image: luxeScentsImg,
+            technologies: ["React", "GSAP", "Tailwind CSS"],
+            liveLink: "https://shop-luxe-scents.vercel.app/",
+            githubLink: "https://github.com/fuleswari220/PerfumeLandingPage",
+            features: [
+                "Scroll-triggered animations with GSAP",
+                "Luxury-themed design and typography",
+                "Responsive layout for all devices",
+                "Smooth transitions and hover effects"
+            ]
+        },
+
         {
             title: "JK Cafe Website",
             description: "Full-stack cafe website built with the MERN stack, featuring menu display, online ordering, and contact functionality with smooth UI and animations.",
@@ -113,20 +129,6 @@ const Projects = () => {
                 "Responsive design",
                 "Modern UI/UX",
                 "Interactive elements"
-            ]
-        },
-        {
-            title: "Netflix Clone",
-            description: "Fully responsive frontend clone of Netflix with modern design and smooth animations.",
-            image: netflixImg,
-            technologies: ["HTML5", "CSS3", "JavaScript"],
-            liveLink: "https://lively-torte-93fd4d.netlify.app/",
-            githubLink: "https://github.com/fuleswari220/Netflix-Clone",
-            features: [
-                "Fully responsive design",
-                "Netflix-like UI",
-                "Smooth animations",
-                "Modern layout"
             ]
         },
     ];
